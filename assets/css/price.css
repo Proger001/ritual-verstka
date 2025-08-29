@@ -1,0 +1,175 @@
+/* Regular */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open_sans_regular.woff2') format('woff2'),
+       url('../fonts/open_sans_regular.woff') format('woff'),
+       url('../fonts/open_sans_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open-sans-bold.woff2') format('woff2'),
+       url('../fonts/open-sans-bold.woff') format('woff'),
+       url('../fonts/open-sans-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+.price-block {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Навигация */
+.price-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.price-nav a {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-family: 'OpenSans', Tahoma;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  border-bottom: 2px solid #114c8c;
+  text-align: center;
+}
+
+.price-nav a img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.price-nav a.active {
+  border-bottom: 2px solid #e22233;
+}
+
+/* Заголовок */
+.price-title {
+  font-size: 36px;
+  font-family: 'OpenSans', Arial, Verdana;
+  font-weight: 400;
+  line-height: 120%;
+  color: #093b71;
+}
+
+/* Карточки */
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* адаптив */
+  gap: 20px;
+}
+
+
+.price-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.price-card h3 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #052e5a;
+  border: 2px solid #052e5a;
+  font-family: 'OpenSans', Calibri light, roboto, Tahoma;
+  font-weight: 700;
+}
+.price-card:active h3, .price-card:hover h3 {
+    background-color: #114c8c;
+    border: 2px solid #114c8c;
+    color: white;
+}
+.price-card .price {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  justify-content: center;
+  font-size: 14px;
+  font-family: 'OpenSans', Calibri light, roboto, Tahoma;
+  font-weight: 400;
+  line-height: 120%;
+  color: #000;
+  width: auto;
+  height: auto;         
+  margin: 0 auto;      
+  align-items: center;
+}
+
+.price-card .price span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.price .installment {
+  padding: 3px 5px;
+  font-size: 13px;
+  color: white;
+  background-color: #e22233;
+}
+
+.price-card .installment-price {
+  font-size: 18px;
+}
+
+.price-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #e3effd;
+  list-style: none;
+  padding: 4%;
+  margin: 0;
+  font-family: 'OpenSans', Arial, Verdana;
+  font-size: 14px;
+  color: #000;
+}
+
+.price-card ul li {
+    border-bottom: 1px solid #d0ddec;
+  padding-bottom: 10px;
+}
+
+
+.btn-order {
+    margin: 30px auto 30px auto;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid #c0d8f1;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    border-radius: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.price-card:active .btn-order, .price-card:hover .btn-order{
+    border: 2px solid #e22233;
+}
+
+.btn-order:hover {
+  background: #e22233;
+  color: white;
+}

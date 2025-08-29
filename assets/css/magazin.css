@@ -1,0 +1,137 @@
+/* Хлебные крошки */
+.breadcrumbs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2%;
+  margin: 20px 0px;
+}
+
+/* Основной layout */
+.shop-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+/* Левая колонка */
+.sidebar-left {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Корзина */
+.cart-widget {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background: #f9f9f9;
+}
+.cart-widget h3 {
+  margin: 0 0 10px;
+}
+.cart-widget p {
+  margin: 5px 0;
+}
+.btn-cart {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #114c8c;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Меню категорий */
+.catalog-menu {
+    border: 2px solid #114c8c;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.catalog-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #c6e2fa;
+    position: relative; /* можно оставить для стрелок или иконок */
+}
+
+.catalog-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.catalog-menu a, .catalog-menu span {
+    text-decoration: none;
+    color: #114c8c;
+    display: block; /* ссылка занимает всю ширину li */
+    cursor: pointer;
+}
+
+/* Подменю без абсолютного позиционирования */
+.sub-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #114c8c;
+    display: none; /* скрыто по умолчанию */
+}
+
+.catalog-menu li:hover > .sub-menu {
+    display: block; /* показываем при наведении */
+}
+
+/* Стили подменю */
+.sub-menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.sub-menu li a, .sub-menu li span {
+    color: #fff;
+    display: block;
+}
+
+/* Для вложенных подменю можно добавить небольшой отступ */
+.sub-menu .sub-menu {
+    padding-left: 15px;
+}
+
+
+/* Правая колонка / основной контент */
+.catalog-content {
+  flex: 1;
+  
+}
+
+/* Сетка карточек категорий */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fff;
+}
+
+.category-card h4 {
+  margin: 0;
+  font-size: 16px;
+}

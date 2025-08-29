@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организация похорон в москве и московской области</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/magazin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+  <!-- Верхний блок -->
+  <div class="top-header">
+    <div class="container">
+      <div class="top-left">
+        <div class="icon-menu">
+          <img src="/assets/images/icon/menu.svg" alt="">
+        </div>
+        <div class="logo">
+          <a href="/" title="Официальный сайт">
+            <img src="assets/images/logo.svg" alt="Логотип">
+          </a>
+          <div class="site-title">
+            <h1>Ритуальные услуги</h1>
+            <p>в полном соответствии ГОСТ Р 54611-2011, ГОСТ 32609-2014</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-right">
+        <div class="city-search">
+          <h3>Выберите ваш город</h3>
+          <div class="current-city" id="currentCity">Москва ▼</div>
+          <div class="red-line"></div>
+
+          <!-- Модальное окно -->
+          <div class="modal" id="cityModal">
+            <div class="modal-content">
+              <span class="close" id="closeModal">&times;</span>
+              <ul class="city-list">
+                <li>Москва</li>
+                <li>Московская область</li>
+                <li>Другой</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <form action="/component/k2/search.html" method="get" id="demo-b" class="mod-poisk">
+          <input type="search" value="Поиск по сайту" name="searchword" maxlength="20" size="20"
+                alt="Поиск"
+                onfocus="if(this.value=='Поиск по сайту') this.value='';"
+                onblur="if(this.value=='') this.value='Поиск по сайту';">
+          <input type="hidden" name="categories"
+                value="4,9,53,57,60,61,65,66,67,68,69,80,84,85,86,87,88,70,71,72,73,74,75,76,77,78,79,81,82,83,89,90">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Навигация -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Ритуальные услуги</a></li>
+        <li><a href="#">Место на кладбище</a></li>
+        <li><a href="#">Стоимость похорон</a></li>
+        <li><a href="#">Ритуальный агент</a></li>
+        <li><a href="#">Товары</a></li>
+        <li><a href="#">Полезная информация</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Бургер меню -->
+  <div class="burger-menu">
+    <div class="burger-close">
+      <img src="/assets/images/icon/close.svg" alt="">
+    </div>
+    <div class="burger-content">
+      <div class="burger-city">
+        <h3>Выберите ваш город</h3>
+        <ul>
+          <li>Москва</li>
+          <li>Московская область</li>
+          <li>Другой</li>
+        </ul>
+      </div>
+      <div class="burger-buttons">
+        <a href="#" class="btn-callback">
+          <img src="/assets/images/icon/tel.svg" alt="">
+          <span>Вам перезвонить?</span>
+        </a>
+        <a href="#" class="btn-calc">
+          <img src="/assets/images/icon/mail.svg" alt="">
+          <span>Задать вопрос</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Инфо-блок -->
+  <div class="info-header">
+    <div class="container">
+      <p class="always-on">Круглосуточно</p>
+      <div class="phone">
+        <a href="tel:+74951234567">8 (800) 000-0000</a>
+      </div>
+      <a href="#" class="btn-callback">
+        <div class="info-icon">
+          <img src="/assets/images/icon/tel.svg" alt="">
+          <p>Контакты</p>
+        </div>
+      </a>
+      <a href="#" class="btn-calc">
+        <div class="info-icon">
+          <img src="/assets/images/icon/rasschet.svg" alt="">
+          <span class="stick"></span>
+          <p>рассчитать стоимость похорон в Москве со скидкой</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Хлебные крошки сверху -->
+  <nav class="breadcrumbs">
+    <a href="/">Главная</a> /
+    <a href="#">Ритуальные товары</a> /
+    <a href="#">Траурные венки</a> /
+    <span>Венки заказные</span>
+  </nav>
+
+  <div class="shop-layout container">
+        <!-- Левая колонка -->
+        <aside class="sidebar-left">
+            <!-- Корзина -->
+            <div class="cart-widget">
+            <h3>Корзина товаров</h3>
+            <p>Товаров: <span>0</span></p>
+            <p>Сумма: <span>0 ₽</span></p>
+            <button class="btn-cart">Перейти в корзину</button>
+            </div>
+
+            <!-- Категории -->
+            <nav class="catalog-menu">
+            <ul>
+                <li class="deeper parent">
+                <span>Ритуальные товары</span>
+                <ul class="sub-menu">
+                    <li><span>Траурные венки</span></li>
+                    <li><span>Гробы</span></li>
+                    <li><span>Кресты</span></li>
+                </ul>
+                </li>
+                <li><span>Услуги</span></li>
+            </ul>
+            </nav>
+        </aside>
+
+        <!-- Правая колонка / основной экран -->
+        <section class="catalog-content">
+            <div class="catalog-grid">
+            <article class="category-card">
+                <h4>Траурные венки</h4>
+            </article>
+
+            <article class="category-card">
+                <h4>Гробы</h4>
+            </article>
+
+            <article class="category-card">
+                <h4>Кресты</h4>
+            </article>
+
+            <article class="category-card">
+                <h4>Рутаульный текстиль</h4>
+            </article>
+
+            <article class="category-card">
+                <h4>Кресты</h4>
+            </article>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+
+
+
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="top-footer">
+        <div class="left-footer">
+          <!-- Первая колонка -->
+          <nav class="footer-nav">
+            <h3>Ритуальные услуги</h3>
+            <ul>
+              <li><a href="#">Рассрочка платежа</a></li>
+              <li><a href="#">Организация похорон в Московской области</a></li>
+              <li><a href="#">Расчёт стоимости ритуальных услуг</a></li>
+              <li><a href="#">Оформить заказ удалённо</a></li>
+              <li><a href="#">Дополнительная скидка 5 000 руб.</a></li>
+              <li><a href="#">Социальные похороны</a></li>
+            </ul>
+          </nav>
+
+          <!-- Вторая колонка -->
+          <nav class="footer-nav">
+            <h3>Городская ритуальная служба</h3>
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Специальные программы</a></li>
+              <li><a href="#">Что делать, если умер близкий человек</a></li>
+              <li><a href="#">Рассчитать стоимость похорон</a></li>
+              <li><a href="#">Памятники</a></li>
+              <li><a href="#">Бесплатный участок земли</a></li>
+              <li><a href="#">Отзывы о нашей работе</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Блок с телефоном и кнопкой -->
+        <div class="right-footer">
+          <div class="number-footer">
+            <p>Круглосуточно</p>
+            <a href="#">8 (000) 000-0000</a>
+          </div>
+          <div class="number-footer">
+            <p>Горячая линия помощи</p>
+            <a href="#">8 800 000-0000</a>
+          </div>
+          <a href="#" class="btn-footer">Задать вопрос</a>
+        </div>
+      </div>
+
+      <span class="underline"></span>
+
+      <!-- Нижний блок -->
+      <div class="down-footer">
+        <span>© 2025 Официальный сайт</span>
+        <a href="#" target="_blank" rel="nofollow">Соглашение на обработку персональных данных</a>
+        <a href="#">Карта сайта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  
+
+
+<script src="assets/js/city-modal.js"></script>   
+</body>
+</html>
